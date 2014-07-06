@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   #get 'home/index'
   resources :info
   match '/index',    to: 'home#index',    via: 'get'
+  match '/download',    to: 'home#download',    via: 'get'
   root 'home#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

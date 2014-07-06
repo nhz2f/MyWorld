@@ -10,4 +10,8 @@ class HomeController < ApplicationController
     #end
     @infos = Info.all
   end
+
+  def download
+    send_file "public/files/test.txt"
+  end
 end
