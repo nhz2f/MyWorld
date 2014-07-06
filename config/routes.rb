@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   #get 'home/index'
+  resources :info
   match '/index',    to: 'home#index',    via: 'get'
   root 'home#index'
   # The priority is based upon order of creation: first created -> highest priority.
