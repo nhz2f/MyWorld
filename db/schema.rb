@@ -11,13 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140706105215) do
+ActiveRecord::Schema.define(version: 20140707035117) do
 
   create_table "infos", force: true do |t|
     t.string   "name"
     t.string   "score"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "edition"
+    t.string   "updateTime"
   end
 
 end

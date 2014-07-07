@@ -15,10 +15,11 @@
            <tbody>
              <% @infos.each do |x|%>
                <tr>
-                 <td class="x_name"><%= link_to x.name, download_path %></td>
-                 <td class="x_edition"><%= x.score %></td>
+                <!-- <td class="x_name"><%= link_to x.name, download_path %></td>-->
+                 <td class="x_name"><%= link_to x.name, download_path(id: x.id) %></td>
+                 <td class="x_edition"><%= x.edition %></td>
                  <td class="x_score"><%= x.score %></td>
-                 <td class="x_update"><%= x.score %></td>
+                 <td class="x_update"><%= x.updateTime %></td>
                </tr>
              <% end %>
            </tbody>

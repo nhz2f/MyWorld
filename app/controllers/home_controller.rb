@@ -1,17 +1,15 @@
 class HomeController < ApplicationController
+  before_action :set_info, only: [:download]
   def index
-    #@info = Info.new
-    #@info.name = "fq"
-    #@info.score = "70"
-    #if @info.save
-      #@ret = "yes"
-    #else
-      #@ret = "no"
-    #end
-    @infos = Info.all
+    @infos = Info.order("id DESC") #以id逆序排列并获取所有记录
   end
 
   def download
-    send_file "public/files/test.txt"
+    send_file "public/files/#{@info.name}.apk"
+  end
+
+private
+  def set_info
+    @info = Info.find(params[:id])
   end
 end
