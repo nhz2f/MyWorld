@@ -42,12 +42,12 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.7em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #999;
+  /*color: #999;*/
 }
 
 p {
@@ -118,12 +118,15 @@ footer ul li {
   margin-left: auto;
   margin-right: auto;  
 }
-.x_id{
-  width:5%;
-}
 .x_name{
-  width:90%;
+  width:60%;
+}
+.x_edition{
+  width:15%;
 }
 .x_score{
-  width:5%;
+  width:10%;
+}
+.x_update{
+  width:15%;
 }

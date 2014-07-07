@@ -1,22 +1,24 @@
 <div class="center hero-unit">
  <!-- <h1>Welcome to MyWorld</h1>-->
-   <h1>Tables</h1>
+   <h2>银行app排名</h2>
      <div class="row">
        <div class="col-md-6">
          <table class="table">
            <thead>
              <tr>
-               <th class="x_id">#</th>
-               <th class="x_name">Name</th>
-               <th class="x_score">score</th>
+               <th class="x_name">银行名称</th>
+               <th class="x_edition">app版本号</th>
+               <th class="x_score">分数</th>
+               <th class="x_update">更新时间</th>
              </tr>
            </thead>
            <tbody>
              <% @infos.each do |x|%>
                <tr>
-                 <td class="x_id"><%= x.id %></td>
-                 <td class="x_name"><%= x.name %></td>
+                 <td class="x_name"><%= link_to x.name, download_path %></td>
+                 <td class="x_edition"><%= x.score %></td>
                  <td class="x_score"><%= x.score %></td>
+                 <td class="x_update"><%= x.score %></td>
                </tr>
              <% end %>
            </tbody>
